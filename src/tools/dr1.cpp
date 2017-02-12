@@ -27,7 +27,7 @@ auto loadFileFromServer(std::string const& filename) -> arma::mat {
 }
 
 
-void updateGaiaDR1FileList() {
+auto updateGaiaDR1FileList() -> void {
 	std::string cmd(std::string("rm gaiaDR1_file_list.txt;") +
 	                std::string("curl -s http://cdn.gea.esac.esa.int/Gaia/gaia_source/csv/") +
 	                std::string(" | awk -F '<a href=\"' '{print $2}' | awk -F '\">' '{print $1}'") +

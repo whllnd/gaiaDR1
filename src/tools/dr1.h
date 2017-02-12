@@ -42,7 +42,7 @@ enum class fields : int { // TODO: Make it work as index
 
 auto loadFileFromServer(std::string const& filename) -> arma::mat;
 auto gaiaDR1FileList() -> std::vector<std::string>;
-void updateGaiaDR1FileList();
+auto updateGaiaDR1FileList() -> void;
 
 } // namespace curl
 } // namespace gaia
