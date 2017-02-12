@@ -1,2 +1,2 @@
-# gaiaM30
-Hunting down a middleweight black hole in M30 using the ESA Gaia data release 1
+# gaiaDR1
+Exploring different apsects of the GAIA Data Release 1
