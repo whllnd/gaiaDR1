@@ -9,9 +9,7 @@
 namespace gaia {
 namespace dr1 {
 
-auto constexpr serverAddr = "http://cdn.gea.esac.esa.int/Gaia/gaia_source/csv/";
-
-enum class fields : int { // TODO: Make it work as index
+enum fields { // TODO: Make it work as index
 	SOLUTION_ID = 0,
 	SOURCE_ID,
 	RANDOM_INDEX,
@@ -39,6 +37,8 @@ enum class fields : int { // TODO: Make it work as index
 	ASTROMETRIC_N_OBS_AL,
 	ASTROMETRIC_N_OBS_AC
 };
+
+auto constexpr serverAddr = "http://cdn.gea.esac.esa.int/Gaia/gaia_source/csv/";
 
 auto loadFileFromServer(std::string const& filename) -> arma::mat;
 auto gaiaDR1FileList() -> std::vector<std::string>;
